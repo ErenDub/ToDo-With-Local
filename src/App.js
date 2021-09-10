@@ -22,6 +22,7 @@ function App() {
         id: idCounter,
         title: inputTitle,
         description: inputDesc,
+        taskDone: false,
       })
     }
     // localStorage['datas'] = JSON.stringify(todoArray)
@@ -46,6 +47,7 @@ function App() {
   }, [])
   const mapReload = () => {
     localStorage.setItem('myArray', JSON.stringify(todoArray))
+
     setInputTitle(' ')
     setTimeout(() => {
       setInputTitle('')

@@ -39,6 +39,16 @@ button {
   max-height: 100px;
   padding: 5px;
 }
+.checkButton {
+  border: none;
+  border-bottom: none;
+  background-color: transparent;
+  transition: background-color 0.2s;
+  outline: none;
+  width: 210px;
+  max-height: 100;
+  opacity: 1 !important;
+}
 button:hover {
   background-color: rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -51,6 +61,7 @@ button:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   width: 210px;
   margin-top: 20px;
+  opacity: 1;
 }
 .arrayTitle {
   font-size: 16px;
@@ -62,4 +73,8 @@ button:hover {
 }
 .descriptions {
   padding: 10px 0;
+  font-size: 14px;
+}
+.done {
+  opacity: 0.2;
 }
